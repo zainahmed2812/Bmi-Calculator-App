@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="aboutus.html" target="_blank">About Us</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+</nav>
+<hr>
+<center>
+    <h1 class="h4">BMI Calculator</h1>
+    <div class="calculate">
+        <form id="bmiForm" action="http://localhost:3000/calculate_bmi" method="POST">
+            <input id="user_id" name="user_id" type="hidden" value="1"> <!-- Set the user ID here -->
+            <input id="weight" name="weight" class="kg" type="number" placeholder="Enter Your Weight in KG" required>
+            <input id="height" name="height" class="cm" type="number" placeholder="Enter Your Height in cm" required><br><br>
+            <button type="submit" class="button">Calculate</button>
+        </form>
+    </div>
+    <h4 id="heading"></h4>
+    <p id="bmi-output"></p>
+    <p id="message"></p>
+    <p style="font-size: large; color: red;">Choose a diet plan tailored to your weight category and start your journey to a healthier you!</p>
+    <a href="diet_normal.html" target="_blank"><button class="Normal">Normal Weight</button></a>
+    <a href="diet_underweight.html" target="_blank"><button class="UnderWeight">Under Weight</button></a>
+    <a href="diet_overweight.html" target="_blank"><button class="OverWeight">Over Weight</button></a>
+</center>
+<hr>
+<script src="backend.js"></script>
+<footer style="background-color: rgb(82, 35, 35);">
+    <div class="footer">
+        <center>
+            <p style="margin-left: 15px; font-size: large;">We care About Your Health<br> We have created for you a BMI calculator which tells you about your (Normal, Underweight, Overweight).<br>We have further added functions like you can check out the diet for you by just your required BMI Category.</p>
+            <p style="font-size: medium; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">FOLLOW US</p>
+            <p>
+                <a href="https://web.facebook.com/profile.php?id=100008114593658" class="fa fa-facebook" target="_blank"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </p>
+        </center>
+    </div>
+</footer>
+</body>
+</html>

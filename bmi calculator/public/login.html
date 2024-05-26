@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styling_signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="aboutus.html" target="_blank">About Us</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+</nav>
+<hr>
+<center>
+    <h1 class="h4">Log In</h1>
+    <div class="calculate" style="height: 200px;">
+        <form id="myForm" action="http://localhost:3000/login" method="POST">
+            <input style="margin-bottom: 30px;" id="email" class="email" type="email" required placeholder="Email Address" name="email">
+            <input id="pass" class="pass" type="password" required placeholder="Password" name="pass">
+            <br>
+            <button class="button">Log In</button>
+        </form>
+    </div>
+</center>
+<footer style="background-color: rgb(82, 35, 35);">
+    <div class="footer">
+        <center>
+            <p style="margin-left: 15px; font-size: large;">We care About Your Health<br> We have created for you a BMI calculator which tells you about your (Normal, Underweight, Overweight).<br>We have further added functions like you can check out the diet for you by just your required BMI Category.</p>
+            <p style="font-size: medium; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">FOLLOW US</p>
+            <p>
+                <a href="https://web.facebook.com/profile.php?id=100008114593658" class="fa fa-facebook" target="_blank"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </p>
+        </center>
+    </div>
+</footer>
+</body>
+</html>
